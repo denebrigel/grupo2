@@ -10,6 +10,7 @@
     if (isset($_POST["search"]["value"])) {
        $query .= 'WHERE nombre LIKE "%' . $_POST["search"]["value"] . '%" ';
        $query .= 'OR apellidos LIKE "%' . $_POST["search"]["value"] . '%" ';
+       $query .= 'OR id LIKE "%' . $_POST["search"]["value"] . '%" ';
     }
 
     if (isset($_POST["order"])) {
