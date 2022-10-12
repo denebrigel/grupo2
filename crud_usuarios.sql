@@ -34,7 +34,7 @@ CREATE TABLE `usuarios` (
   `imagen` varchar(250) COLLATE utf8_spanish2_ci NOT NULL,
   `telefono` varchar(30) COLLATE utf8_spanish2_ci NOT NULL,
   `email` varchar(150) COLLATE utf8_spanish2_ci NOT NULL,
-  `fecha_creacion` date NOT NULL DEFAULT current_timestamp()
+  `fecha_creacion` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
