@@ -1,5 +1,7 @@
 <?php
 
+/*llamado a la base de datos */
+
 include('conexion.php');
 include("funciones.php");
 
